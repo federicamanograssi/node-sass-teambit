@@ -1,0 +1,28 @@
+@import 'partial/variable';
+@import 'partial/mixin';
+@import 'partial/common';
+@import 'partial/header';
+
+header .container{
+    border-bottom: 1px solid black;
+}
+
+.hero_section {
+    height: calc(100vh - #{$headerMainHeight});
+    background-image: url('../img/illustration-main.jpg');
+}
+
+.info_section {
+    background-color: #ffe7d2;
+}
+
+.card_row {
+    .card{
+        @include infocard;
+    }
+    & + div img {
+        display: block;
+        margin: 0 auto;
+        max-height: 250px;
+    }
+}
