@@ -13,3 +13,19 @@
         margin-bottom: 20px;
     }
 }
+
+@mixin benefit_row{
+    .main_img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .main_text {
+        h2 {
+            margin-bottom: 30px;
+       }
+        img {
+            width: 50%;
+        }
+    }
+}
