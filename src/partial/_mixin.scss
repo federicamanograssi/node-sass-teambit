@@ -8,6 +8,7 @@
 }
 @mixin infocard{
     text-align: center;
+    margin-top: 50px;
     padding: 20px;
     & img {
         width: auto;
@@ -34,11 +35,12 @@
 
         }
         h2 {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
        }
        .link_more{
 
            display: block;
+           text-transform: capitalize;
            color: $secondary;
            margin-top: 20px;
            margin-bottom: 20px;
@@ -56,4 +58,21 @@
        }
     
     }
+}
+
+@mixin signin_button{
+    background: $coloredBg;
+    color: $neutralBg;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 10px;
+    border: 1px solid $coloredBg;
+    border-radius: $generalBorderRadius;
+    
+    img{
+        width: 16px;
+        height: 16px;
+    }
+
+
 }

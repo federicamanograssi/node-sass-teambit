@@ -19,11 +19,15 @@ body{
 .column_row{
     @include flex;
 }
-
+.col-60{
+    width:60%;
+}
 .col-50{
     width:50%;
 }
-
+.col-40{
+    width:40%;
+}
 .col-33{
     width: calc(100% / 3);
 }
@@ -37,7 +41,7 @@ body{
 // TYPOGRAPHY------------
 @for $i from 1 through 6{
     h#{$i}{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -53,7 +57,10 @@ a{
 .text-center {
     text-align: center;
 }
-
-
+button {
+    &.signin_button{
+        @include signin_button;
+    }
+}
 
 

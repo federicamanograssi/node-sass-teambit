@@ -17,13 +17,20 @@ header {
     img{
         max-width: 100%;
     }
+
+    .signin_row{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
     // background: url('../img/illustration-main.jpg');
 }
 
 #info_section {
     background-color: $coloredBg;
-    color: $neutralBg
+    color: $neutralBg;
+    
 }
+
 
 .card_row {
     .card{
@@ -31,7 +38,7 @@ header {
     }
     & + div img {
         display: block;
-        margin: 0 auto;
+        margin: 50px auto;
         max-height: 250px;
         filter: brightness(150%) contrast(100%)
     }
@@ -52,12 +59,12 @@ header {
         color: $mainblue;
         background-color: $neutralBg;
         border: 1px solid $mainblue;
-        border-radius: 10px;
+        border-radius: $generalBorderRadius;
         max-width: 900px;
         width: 80%;
         min-height: 200px;
-        margin: 0 auto;
-        padding: 15px;
+        margin: 030px auto;
+        padding: 20px;
         position: relative;
 
         i {
@@ -82,7 +89,7 @@ header {
                     width: 40px;
                 }
             }
-            
+
             .quote_author_name{
             color: $secondary;
         };
@@ -90,5 +97,19 @@ header {
         }
     }
 
+    .signin_row{
+        button {
+            border:1px solid $neutralBg;
+        }
+        a{
+            color: $neutralBg;
+        }
+    }
 
+
+}
+
+.signin_alternative {
+    font-size: 0.8em;
+    margin-top: 10px;
 }

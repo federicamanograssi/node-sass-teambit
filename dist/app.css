@@ -25,8 +25,16 @@ body {
   display: -webkit-flex;
 }
 
+.col-60 {
+  width: 60%;
+}
+
 .col-50 {
   width: 50%;
+}
+
+.col-40 {
+  width: 40%;
 }
 
 .col-33 {
@@ -39,27 +47,27 @@ body {
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h4 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h5 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h6 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -78,22 +86,48 @@ a {
   text-align: center;
 }
 
+button.signin_button {
+  background: #0414b3;
+  color: white;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 5px 10px;
+  border: 1px solid #0414b3;
+  border-radius: 10px;
+}
+button.signin_button img {
+  width: 16px;
+  height: 16px;
+}
+
 header {
   width: 100%;
   height: 70px;
   line-height: 70px;
+  font-size: 0.8em;
 }
 header > div:only-child {
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
+  align-items: center;
 }
 header ul {
   list-style: none;
+  text-transform: capitalize;
 }
 header li {
   display: inline;
   margin: 0 10px;
+  vertical-align: middle;
+}
+header li.signup {
+  border: 1px solid #0e14ee;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+header li.signup img {
+  height: 1em;
 }
 header a {
   text-decoration: none;
@@ -107,7 +141,7 @@ header a.submenu:after {
 }
 header .brand_logo {
   width: auto;
-  max-height: 70px;
+  height: 50px;
 }
 
 footer {
@@ -153,6 +187,10 @@ header .container {
 #hero_section img {
   max-width: 100%;
 }
+#hero_section .signin_row {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
 #info_section {
   background-color: #0414b3;
@@ -161,6 +199,7 @@ header .container {
 
 .card_row .card {
   text-align: center;
+  margin-top: 50px;
   padding: 20px;
 }
 .card_row .card img {
@@ -171,7 +210,7 @@ header .container {
 }
 .card_row + div img {
   display: block;
-  margin: 0 auto;
+  margin: 50px auto;
   max-height: 250px;
   filter: brightness(150%) contrast(100%);
 }
@@ -195,10 +234,11 @@ header .container {
   transform: translateX(-100%);
 }
 #benefit_section .benefit_row .main_text h2 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 #benefit_section .benefit_row .main_text .link_more {
   display: block;
+  text-transform: capitalize;
   color: #3e14e9;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -225,8 +265,8 @@ header .container {
   max-width: 900px;
   width: 80%;
   min-height: 200px;
-  margin: 0 auto;
-  padding: 15px;
+  margin: 30px auto;
+  padding: 20px;
   position: relative;
 }
 #quote #quote_cloud i {
@@ -252,4 +292,15 @@ header .container {
 }
 #quote #quote_cloud .quote_author .quote_author_name {
   color: #3e14e9;
+}
+#quote .signin_row button {
+  border: 1px solid white;
+}
+#quote .signin_row a {
+  color: white;
+}
+
+.signin_alternative {
+  font-size: 0.8em;
+  margin-top: 10px;
 }

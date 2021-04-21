@@ -2,18 +2,31 @@ header {
     width: $headerMainWidth;
     height: $headerMainHeight;
     line-height: $headerMainHeight;
+    font-size: 0.8em;
 
     & > div:only-child{
         @include flex;
         justify-content: space-between;
+        align-items: center;
     }
     ul {
         list-style: none;
+        text-transform: capitalize;
     }
 
     li{
         display: inline;
         margin: 0 10px;
+        vertical-align: middle;
+
+        &.signup{
+            border: 1px solid $mainblue;
+            border-radius: $generalBorderRadius;
+            padding: 5px 10px;
+            img{
+                height: 1em;
+            }
+        }
     }
 
     a {
@@ -30,6 +43,6 @@ header {
 
     .brand_logo {
        width: auto;
-       max-height: $headerMainHeight; 
+       height: $headerMainHeight - 20px; 
     }
 }
