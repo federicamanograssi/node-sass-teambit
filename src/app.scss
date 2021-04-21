@@ -2,18 +2,27 @@
 @import 'partial/mixin';
 @import 'partial/common';
 @import 'partial/header';
+@import 'partial/footer';
 
-header .container{
+header {
+    .container{
     border-bottom: 1px solid black;
+    }
 }
 
 #hero_section {
-    height: calc(100vh - #{$headerMainHeight});
-    background-image: url('../img/illustration-main.jpg');
+    .container{
+        @include flex;
+    }
+    img{
+        max-width: 100%;
+    }
+    // background: url('../img/illustration-main.jpg');
 }
 
 #info_section {
-    background-color: #ffe7d2;
+    background-color: $coloredBg;
+    color: $neutralBg
 }
 
 .card_row {
@@ -24,12 +33,53 @@ header .container{
         display: block;
         margin: 0 auto;
         max-height: 250px;
+        filter: brightness(150%) contrast(100%)
     }
 }
 
 #benefit_section{
-    background: white;
+    background: $neutralBg;
     .benefit_row{
         @include benefit_row
     }
+}
+
+#quote{
+    background-color: $coloredBg;
+
+    #quote_cloud{
+        background-color: $neutralBg;
+        border: 1px solid $mainblue;
+        border-radius: 10px;
+        max-width: 900px;
+        width: 80%;
+        min-height: 200px;
+        margin: 0 auto;
+        padding: 15px;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: -12px;
+            left: 0;
+            font-size: 30px;
+            color: $mainblue;
+        }
+        .quote_text{
+            p{
+                margin-bottom: 20px;
+            }
+        }
+        .quote_author{
+            img {
+                width: 40px;
+            }
+            .quote_author_name{
+            color: $mainblue;
+        };
+
+        }
+    }
+
+
 }

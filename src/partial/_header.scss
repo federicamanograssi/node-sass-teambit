@@ -19,6 +19,13 @@ header {
     a {
         text-decoration: none;
         color: inherit;
+
+        &.submenu:after{
+            content: '\f107';
+            font-family: 'Font Awesome';
+            font-weight: 500;
+            color: inherit;
+        }
     }
 
     .brand_logo {

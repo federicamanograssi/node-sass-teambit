@@ -1,7 +1,14 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  color: #0e14ee;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
 }
 
 .container_fw {
@@ -24,6 +31,43 @@
 
 .col-33 {
   width: calc(100% / 3);
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+h6 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 26px;
 }
 
 .text-center {
@@ -51,22 +95,64 @@ header a {
   text-decoration: none;
   color: inherit;
 }
+header a.submenu:after {
+  content: "";
+  font-family: "Font Awesome";
+  font-weight: 500;
+  color: inherit;
+}
 header .brand_logo {
   width: auto;
   max-height: 70px;
+}
+
+footer {
+  background: white;
+  font-size: 0.8em;
+}
+footer .widget_info {
+  width: 400px;
+  display: flex;
+  display: -webkit-flex;
+}
+footer .widget_info img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+footer .widget_info p {
+  margin-right: 10px;
+}
+footer .widget_navigation {
+  margin: 0 10px;
+}
+footer .widget_navigation ul {
+  list-style: none;
+}
+footer .widget_navigation li {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+footer .widget_navigation li.title {
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 header .container {
   border-bottom: 1px solid black;
 }
 
-#hero_section {
-  height: calc(100vh - 70px);
-  background-image: url(/images/illustration-main.jpg?b02bfc04b821942b18310d564a1fc8c5);
+#hero_section .container {
+  display: flex;
+  display: -webkit-flex;
+}
+#hero_section img {
+  max-width: 100%;
 }
 
 #info_section {
-  background-color: #ffe7d2;
+  background-color: #0414b3;
+  color: white;
 }
 
 .card_row .card {
@@ -77,11 +163,13 @@ header .container {
   width: auto;
   max-height: 110px;
   margin-bottom: 20px;
+  filter: brightness(150%) contrast(100%);
 }
 .card_row + div img {
   display: block;
   margin: 0 auto;
   max-height: 250px;
+  filter: brightness(150%) contrast(100%);
 }
 
 #benefit_section {
@@ -91,9 +179,47 @@ header .container {
   width: 100%;
   height: auto;
 }
+#benefit_section .benefit_row .main_text * {
+  max-width: 450px;
+}
 #benefit_section .benefit_row .main_text h2 {
   margin-bottom: 30px;
 }
+#benefit_section .benefit_row .main_text .link_more {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 #benefit_section .benefit_row .main_text img {
-  width: 50%;
+  max-height: 270px;
+}
+
+#quote {
+  background-color: #0414b3;
+}
+#quote #quote_cloud {
+  background-color: white;
+  border: 1px solid #0e14ee;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 80%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 15px;
+  position: relative;
+}
+#quote #quote_cloud i {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  font-size: 30px;
+  color: #0e14ee;
+}
+#quote #quote_cloud .quote_text p {
+  margin-bottom: 20px;
+}
+#quote #quote_cloud .quote_author img {
+  width: 40px;
+}
+#quote #quote_cloud .quote_author .quote_author_name {
+  color: #0e14ee;
 }

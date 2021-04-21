@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    color:$mainblue;
+    font-family: $font-family;
+    font-size: 22px;
+}
 .container_fw{
     width: 100%;
 }
@@ -23,9 +28,26 @@
     width: calc(100% / 3);
 }
 
-
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 // __________________
+// TYPOGRAPHY------------
+@for $i from 1 through 6{
+    h#{$i}{
+        margin-bottom: 10px;
+    }
+}
+
+h1{
+  font-size: 50px;  
+}
+h2{
+    font-size: 26px;
+}
+
 .text-center {
     text-align: center;
 }

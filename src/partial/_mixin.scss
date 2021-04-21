@@ -11,6 +11,7 @@
         width: auto;
         max-height: 110px;
         margin-bottom: 20px;
+        filter: brightness(150%) contrast(100%)
     }
 }
 
@@ -21,11 +22,19 @@
     }
 
     .main_text {
+        & *{
+            max-width: 450px;
+        }
         h2 {
             margin-bottom: 30px;
        }
-        img {
-            width: 50%;
-        }
+       .link_more{
+           margin-top: 20px;
+           margin-bottom: 20px;
+       }
+       img{
+           max-height: 270px;
+       }
+    
     }
 }
