@@ -70,6 +70,10 @@ h2 {
   font-size: 26px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -175,19 +179,35 @@ header .container {
 #benefit_section {
   background: white;
 }
+#benefit_section .benefit_row {
+  padding: 20px 0;
+}
 #benefit_section .benefit_row .main_img img {
   width: 100%;
   height: auto;
 }
-#benefit_section .benefit_row .main_text * {
+#benefit_section .benefit_row .main_text {
   max-width: 450px;
+}
+#benefit_section .benefit_row .main_text.text_ar {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
 }
 #benefit_section .benefit_row .main_text h2 {
   margin-bottom: 30px;
 }
 #benefit_section .benefit_row .main_text .link_more {
+  display: block;
+  color: #3e14e9;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+#benefit_section .benefit_row .main_text .link_more i {
+  margin-left: 10px;
+}
+#benefit_section .benefit_row .main_text .link_more:hover {
+  color: #7f14d4;
 }
 #benefit_section .benefit_row .main_text img {
   max-height: 270px;
@@ -195,8 +215,10 @@ header .container {
 
 #quote {
   background-color: #0414b3;
+  color: white;
 }
 #quote #quote_cloud {
+  color: #0e14ee;
   background-color: white;
   border: 1px solid #0e14ee;
   border-radius: 10px;
@@ -210,16 +232,24 @@ header .container {
 #quote #quote_cloud i {
   position: absolute;
   top: -12px;
-  left: 0;
+  left: 6;
   font-size: 30px;
-  color: #0e14ee;
+  color: #3e14e9;
 }
 #quote #quote_cloud .quote_text p {
   margin-bottom: 20px;
 }
-#quote #quote_cloud .quote_author img {
+#quote #quote_cloud .quote_author {
+  display: flex;
+  display: -webkit-flex;
+  font-size: 0.8em;
+}
+#quote #quote_cloud .quote_author .quote_author_img {
+  margin-right: 10px;
+}
+#quote #quote_cloud .quote_author .quote_author_img img {
   width: 40px;
 }
 #quote #quote_cloud .quote_author .quote_author_name {
-  color: #0e14ee;
+  color: #3e14e9;
 }

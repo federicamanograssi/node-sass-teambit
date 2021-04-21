@@ -46,8 +46,10 @@ header {
 
 #quote{
     background-color: $coloredBg;
+    color: $neutralBg;
 
     #quote_cloud{
+        color: $mainblue;
         background-color: $neutralBg;
         border: 1px solid $mainblue;
         border-radius: 10px;
@@ -61,9 +63,9 @@ header {
         i {
             position: absolute;
             top: -12px;
-            left: 0;
+            left: 6;
             font-size: 30px;
-            color: $mainblue;
+            color: $secondary;
         }
         .quote_text{
             p{
@@ -71,11 +73,18 @@ header {
             }
         }
         .quote_author{
-            img {
-                width: 40px;
+            @include flex;
+            font-size: 0.8em;
+
+            .quote_author_img{
+                margin-right: 10px;
+                img {
+                    width: 40px;
+                }
             }
+            
             .quote_author_name{
-            color: $mainblue;
+            color: $secondary;
         };
 
         }
